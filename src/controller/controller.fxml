@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <top>
+      <AnchorPane prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #D65151;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button8" layoutX="63.0" layoutY="170.0" mnemonicParsing="false" onAction="#button8OnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #FCFCFC;" text="8">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="button16" layoutX="184.0" layoutY="170.0" mnemonicParsing="false" onAction="#button16OnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #FCFCFC;" text="16">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="button32" layoutX="308.0" layoutY="170.0" mnemonicParsing="false" onAction="#button32OnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #FCFCFC;" text="32">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="46.0" layoutY="14.0" prefHeight="35.0" prefWidth="390.0" text="Введите целочисленное значение:" textFill="#fcfcfc">
+               <font>
+                  <Font name="Constantia" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberField" layoutX="155.0" layoutY="49.0" onKeyTyped="#numberFieldKeyTyped" prefHeight="40.0" prefWidth="100.0" />
+            <Label layoutX="46.0" layoutY="101.0" prefHeight="35.0" prefWidth="390.0" text="Сколько младших битов отобразить" textFill="#fcfcfc">
+               <font>
+                  <Font name="Constantia" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="506.0" layoutY="79.0" prefHeight="80.0" prefWidth="280.0" text="BasicShowBits" textFill="#fcfcfc">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #D65151;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="exitButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #F4DBDB;" text="Выход" />
+            <Button fx:id="resetButton" layoutX="710.0" layoutY="13.0" mnemonicParsing="false" onAction="#resetButtonOnAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #F4DBDB;" text="Сбросить" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="268.0" prefWidth="800.0" style="-fx-background-color: #F4DBDB;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="49.0" layoutY="14.0" prefHeight="35.0" prefWidth="305.0" text="Результат в двоичном виде:">
+               <font>
+                  <Font name="Constantia" size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="fieldResult" layoutX="49.0" layoutY="49.0" prefHeight="150.0" prefWidth="330.0" style="-fx-background-color: #FCFCFC;" />
+            <Label fx:id="errorMessageField" layoutX="436.0" layoutY="106.0" prefHeight="35.0" prefWidth="305.0">
+               <font>
+                  <Font name="Constantia" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
